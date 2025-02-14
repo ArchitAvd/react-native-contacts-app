@@ -20,7 +20,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.yourname.yourapp",
+      "package": "com.archit.contacts",
       "versionCode": 1
     },
     "web": {
