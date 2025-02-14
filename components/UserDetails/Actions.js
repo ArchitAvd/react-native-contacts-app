@@ -27,15 +27,7 @@ const Actions = ({ email, cell, phone }) => {
         body={toPhoneNumber(cell)}
         actions={[
           {
-            onPress: () => {
-              Linking.canOpenURL(`tel:${cell}`).then((supported) => {
-                if (supported) {
-                  Linking.openURL(`tel:${cell}`);
-                } else {
-                  console.log('The device cannot make calls');
-                }
-              });
-            },
+            onPress: () => Linking.openURL(`tel:${cell}`),
             icon: faPhone,
           },
           {
